@@ -16,9 +16,22 @@ I am currently a student at Bishop Stortford College who is currently studying A
 This portfolio documents my progress through a Python programming course designed for students preparing for STEM pathways at University:
 - Python fundamentals (variables, input/output, data types)
 - Control structures (loops and conditionals)
--Functions and modular code
--Data structured (lists, dictionaries, tuples, sets)
--Validation and error handling
--File handling
--Object-oriented programming (OOP)
--Version control with GIT and GITHUB
+- Functions and modular code
+- Data structured (lists, dictionaries, tuples, sets)
+- Validation and error handling
+- File handling
+- Object-oriented programming (OOP)
+- Version control with GIT and GITHUB
+- Working with Jupyter Notebooks
+
+---
+
+## Portfolio Projects
+
+| # | Project | Keys Skills | Status |
+| ---|---|---|
+| 1 | {Unit Converter}(#) | Variables, functions, input/ouput 
+| 2 | [Number Guessing Game](#) |Loops , conditionals, random 
+| 3 | {To-Do List}(#) | Lists, functions, data structures 
+| 4 | {Student Grade Calculator}(#) | Dictionaries, validation, error handling
+| 5 |
