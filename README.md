@@ -8,8 +8,7 @@
 
 ---
 ## About Me
-I am currently a student at Bishop Stortford College who is currently studying A level Maths, Chemistry and Economics. I chose these because I enjoy doing quantitve subjects that can challenge me and subjects that have relevance in day to day life. Because of this I want to do Economics at university as it is a mathematical subject and is essential for everyone.
-
+I am currently a student at Bishop Stortford College who is currently studying A level Maths, Chemistry and Economics. I chose these because I enjoy doing quantitve subjects that can challenge me and subjects that have relevance in day to day life.
 
 ## Course Overview
 
@@ -28,11 +27,11 @@ This portfolio documents my progress through a Python programming course designe
 
 ## Portfolio Projects
 
-| # | Project | Keys Skills | Status |
+"| 1 | [Unit Converter](#) | Variables, functions, input/output | ✅ Complete |\n",
+    "| 2 | [Number Guessing Game](#) | Loops, conditionals, random | ✅ Complete |\n",
+    "| 3 | [To-Do List](#) | Lists, functions, data structures | ✅ Complete |\n",
+    "| 4 | [Student Grade Calculator](#) | Dictionaries, validation, error handling | ✅ Complete \n",
+    "| 5 | [OOP Bank Account](#) | Classes, OOP principles | ✅ Complete |\n",
+    "| 6 | [Data Analysis Notebook](#) | Jupyter Notebooks, data exploration | ✅ Complete |\n",
 
-| ---|---|---|
-| 1 | {Unit Converter}(#) | Variables, functions, input/ouput 
-| 2 | [Number Guessing Game](#) |Loops , conditionals, random 
-| 3 | {To-Do List}(#) | Lists, functions, data structures 
-| 4 | {Student Grade Calculator}(#) | Dictionaries, validation, error handling
-| 5 |
+    
