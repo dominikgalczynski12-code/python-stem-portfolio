@@ -29,6 +29,7 @@ This portfolio documents my progress through a Python programming course designe
 ## Portfolio Projects
 
 | # | Project | Keys Skills | Status |
+
 | ---|---|---|
 | 1 | {Unit Converter}(#) | Variables, functions, input/ouput 
 | 2 | [Number Guessing Game](#) |Loops , conditionals, random 
