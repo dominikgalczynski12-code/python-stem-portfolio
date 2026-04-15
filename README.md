@@ -27,15 +27,16 @@ This portfolio documents my progress through a Python programming course designe
 
 ## Portfolio Projects
 
-"| 1 | [Unit Converter](#) | Variables, functions, input/output | ✅ Complete |\n",
+    "| 1 | [Unit Converter](#) | Variables, functions, input/output | ✅ Complete |\n",
 
     "| 2 | [Number Guessing Game](#) | Loops, conditionals, random | ✅ Complete |\n",
 
     "| 3 | [To-Do List](#) | Lists, functions, data structures | ✅ Complete |\n",
 
     "| 4 | [Student Grade Calculator](#) | Dictionaries, validation, error handling | ✅ Complete \n",
-    "| 5 | [OOP Bank Account](#) | Classes, OOP principles | ✅ Complete |\n",
     
+    "| 5 | [OOP Bank Account](#) | Classes, OOP principles | ✅ Complete |\n",
+
     "| 6 | [Data Analysis Notebook](#) | Jupyter Notebooks, data exploration | ✅ Complete |\n",
 
     
