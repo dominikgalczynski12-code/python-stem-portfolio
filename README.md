@@ -26,6 +26,8 @@ This portfolio documents my progress through a Python programming course designe
 ---
 
 ## Portfolio Projects
+[Unit Converter](#unit-converter)
+
 
     1. [Unit Converter](#unit-converter) | Variables, functions, input/output | ✅ Complete 
     
