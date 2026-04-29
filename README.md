@@ -27,7 +27,7 @@ This portfolio documents my progress through a Python programming course designe
 
 ## Portfolio Projects
 
-    | 1 | [Unit Converter](#) | Variables, functions, input/output | ✅ Complete |
+    | 1 | [Unit Converter](#unit-converter) | Variables, functions, input/output | ✅ Complete |
 
     "| 2 | [Number Guessing Game](#) | Loops, conditionals, random | ✅ Complete |\n",
 
@@ -39,4 +39,15 @@ This portfolio documents my progress through a Python programming course designe
 
     "| 6 | [Data Analysis Notebook](#) | Jupyter Notebooks, data exploration | ✅ Complete |\n",
 
-    
+# Projects
+
+## Unit Converter
+**Description**
+
+
+```Python
+
+
+```
+**Output**
+
