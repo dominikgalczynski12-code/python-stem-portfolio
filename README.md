@@ -46,6 +46,58 @@ This portfolio documents my progress through a Python programming course designe
 
 ## Unit Converter
 **Description**
+def km_to_miles(km):
+    """Convert kilometres to miles."""
+    miles = km  * 0.621371
+    return miles
+
+def miles_to_km(miles):
+    """Convert miles to kilometres."""
+    km = miles / 0.621371
+    return km
+
+def celsius_to_fahrenheit(celsius):
+    """Convert celsius to fahrenheit"""
+    fahrenheit= celsius + 273
+    return fahrenheit
+
+def fahrenheit_to_celsius(fahrenheit):
+    """Convert fahrenheit to celsius"""
+    celsius= fahrenheit - 273
+    return celsius
+
+
+def show_menu():
+    print("=== Unit Converter ===")
+    print("1. Kilometres to Miles")
+    print("2. Miles to Kilometres")
+    print("3. Celsius to Fahrenheit")
+    print("4. Fahrenheit to Celsius")
+
+def main():
+    show_menu()
+    choice = input("Enter your choice (1-4): ")
+    
+    if choice == "1":
+        km = float(input("Enter kilometres: "))
+        result = km_to_miles(km)
+        print(f"{km} km = {result:.2f} miles")
+
+    if choice == "2":
+        miles = float(input("Enter miles: "))
+        result = miles_to_km(miles)
+        print(f"{miles} miles = {result:.2f} km")
+
+
+    if choice == "3":
+        celsius = float(input("Enter Celsius: "))
+        result = celsius_to_fahrenheit(celsius)
+        print(f"{celsius} celsius = {result:.2f} fahrenheit")
+
+    if choice == "4":
+        fahrenheight = float(input("Enter Fahrenheit: "))
+        result = fahrenheit_to_celsius (fahrenheit)
+        print(f"{fahrenheit} fahrenheit = {result:.2f} celsius")
 
 
 ```Python
