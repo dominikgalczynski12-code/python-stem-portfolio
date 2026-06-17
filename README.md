@@ -184,5 +184,95 @@ def main():
 main() 
 
 ```
-**Output**
+##  Number Guessing Game
+**Description**
+```Python
+import random 
+ 
+ 
+def get_number(message): 
+   """Ask the user for a number and stop the program crashing if they type letters.""" 
+   try: 
+       number = int(input(message)) 
+       return number 
+   except ValueError: 
+       print("Please enter a valid whole number.") 
+       return None 
+ 
+ 
+def choose_difficulty(): 
+   """Let the user choose the difficulty level.""" 
+   print("=== Choose Difficulty ===") 
+   print("1. Easy: 1 to 50") 
+   print("2. Medium: 1 to 100") 
+   print("3. Hard: 1 to 500") 
+ 
+   choice = input("Enter your choice (1-3): ") 
+ 
+   if choice == "1": 
+       return 50 
+   elif choice == "2": 
+       return 100 
+   elif choice == "3": 
+       return 500 
+   else: 
+       print("Invalid choice. Medium difficulty selected.") 
+       return 100 
+ 
+ 
+def play_game(): 
+   """Play one round of the guessing game.""" 
+   max_number = choose_difficulty() 
+   secret = random.randint(1, max_number) 
+   attempts = 0 
+ 
+   print(f"\nI'm thinking of a number between 1 and {max_number}.") 
+ 
+   while True: 
+       guess = get_number("Your guess: ") 
+ 
+       if guess is None: 
+           continue 
+ 
+       attempts += 1 
+ 
+       if guess < secret: 
+           print("Too low! Try again.") 
+       elif guess > secret: 
+           print("Too high! Try again.") 
+       else: 
+           print(f"Correct! You got it in {attempts} attempts.") 
+           return attempts 
+ 
+ 
+def main(): 
+   best_score = None 
+ 
+   print("=== Number Guessing Game ===") 
+ 
+   while True: 
+       attempts = play_game() 
+ 
+       if best_score is None or attempts < best_score: 
+           best_score = attempts 
+           print("New best score!") 
+ 
+       print(f"Best score so far: {best_score} attempts") 
+ 
+       play_again = input("\nDo you want to play again? (yes/no): ") 
+ 
+       if play_again.lower() != "yes": 
+           print("Thanks for playing!") 
+           break 
+ 
+ 
+main()
+
+
+
+```
+ 
+
+
+
 
