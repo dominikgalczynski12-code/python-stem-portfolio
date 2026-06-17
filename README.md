@@ -335,6 +335,119 @@ main()
 
 
 ```
+## Student Grade Calculator
+**Description**
+
+    
+
+ 
+
+
+
+```Python
+def get_grade(average): 
+   """Return a letter grade based on average percentage.""" 
+   if average >= 70: 
+       return "A" 
+   elif average >= 60: 
+       return "B" 
+   elif average >= 50: 
+       return "C" 
+   elif average >= 40: 
+       return "D" 
+   else: 
+       return "U" 
+ 
+ 
+def get_valid_score(subject): 
+   """Ask for a score and keep asking until a valid number is entered.""" 
+   while True: 
+       try: 
+           score = float(input(f"Enter score for {subject} (0-100): ")) 
+ 
+           if 0 <= score <= 100: 
+               return score 
+           else: 
+               print("Score must be between 0 and 100.") 
+ 
+       except ValueError: 
+           print("Please enter a number.") 
+ 
+ 
+def calculate_student_results(): 
+   """Collect scores for one student and return their results.""" 
+   name = input("\nStudent name: ") 
+ 
+   subjects = ["Maths", "English", "Science"] 
+   scores = {} 
+ 
+   for subject in subjects: 
+       scores[subject] = get_valid_score(subject) 
+ 
+   average = sum(scores.values()) / len(scores) 
+   grade = get_grade(average) 
+ 
+   student = { 
+       "name": name, 
+       "scores": scores, 
+       "average": average, 
+       "grade": grade 
+   } 
+ 
+   return student 
+ 
+ 
+def display_student_results(student): 
+   """Display results for one student.""" 
+   print(f"\n=== Results for {student['name']} ===") 
+ 
+   for subject, score in student["scores"].items(): 
+       print(f"{subject}: {score:.1f}") 
+ 
+   print(f"Average: {student['average']:.1f}%") 
+   print(f"Grade: {student['grade']}") 
+ 
+ 
+def display_summary(students): 
+   """Display all students ranked by average.""" 
+   print("\n=== Class Summary ===") 
+ 
+   students.sort(key=lambda student: student["average"], reverse=True) 
+ 
+   print("Rank | Name | Average | Grade") 
+   print("------------------------------") 
+ 
+   rank = 1 
+ 
+   for student in students: 
+       print(f"{rank} | {student['name']} | {student['average']:.1f}% | {student['grade']}") 
+       rank += 1 
+ 
+ 
+def main(): 
+   students = [] 
+ 
+   print("=== Student Grade Calculator ===") 
+ 
+   while True: 
+       student = calculate_student_results() 
+       students.append(student) 
+ 
+       display_student_results(student) 
+ 
+       another = input("\nDo you want to enter another student? (yes/no): ") 
+ 
+       if another.lower() != "yes": 
+           break 
+ 
+   display_summary(students) 
+ 
+ 
+main()
+
+```
+
+ 
 
 
 
