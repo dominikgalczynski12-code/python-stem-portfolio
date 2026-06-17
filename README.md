@@ -47,7 +47,14 @@ This portfolio documents my progress through a Python programming course designe
 ## Unit Converter
 **Description**
 
-     def km_to_miles(km): 
+    
+
+ 
+
+
+
+```Python
+ def km_to_miles(km): 
    """Convert kilometres to miles.""" 
    miles = km * 0.621371 
    return miles 
@@ -175,13 +182,6 @@ def main():
  
  
 main() 
-
- 
-
-
-
-```Python
-
 
 ```
 **Output**
