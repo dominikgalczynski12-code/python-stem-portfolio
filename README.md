@@ -446,6 +446,158 @@ def main():
 main()
 
 ```
+## OOP Bank Account
+**Description**
+
+    
+
+ 
+
+
+
+```Python
+
+
+
+
+
+
+
+
+
+
+class BankAccount: 
+   """A simple bank account class.""" 
+ 
+   def __init__(self, owner, initial_balance=0): 
+       """Set up the account with an owner name and starting balance.""" 
+       self.owner = owner 
+       self.balance = initial_balance 
+       self.transactions = [] 
+ 
+       if initial_balance > 0: 
+           self.transactions.append(f"Opening balance: £{initial_balance:.2f}") 
+ 
+   def deposit(self, amount): 
+       """Add money to the account.""" 
+       if amount > 0: 
+           self.balance += amount 
+           self.transactions.append(f"Deposit: +£{amount:.2f}") 
+           print(f"Deposited £{amount:.2f}. New balance: £{self.balance:.2f}") 
+       else: 
+           print("Deposit amount must be positive.") 
+ 
+   def withdraw(self, amount): 
+       """Remove money from the account if funds are available.""" 
+       if amount <= 0: 
+           print("Withdrawal amount must be positive.") 
+       elif amount > self.balance: 
+           print(f"Insufficient funds. Balance is only £{self.balance:.2f}") 
+       else: 
+           self.balance -= amount 
+           self.transactions.append(f"Withdrawal: -£{amount:.2f}") 
+           print(f"Withdrew £{amount:.2f}. New balance: £{self.balance:.2f}") 
+ 
+   def show_balance(self): 
+       """Display the current balance.""" 
+       print(f"\nAccount holder: {self.owner}") 
+       print(f"Current balance: £{self.balance:.2f}") 
+ 
+   def show_history(self): 
+       """Display all transactions.""" 
+       print(f"\n=== Transaction History for {self.owner} ===") 
+ 
+       if len(self.transactions) == 0: 
+           print("No transactions yet.") 
+       else: 
+           for transaction in self.transactions: 
+               print(transaction) 
+ 
+       print(f"Current balance: £{self.balance:.2f}") 
+ 
+ 
+class SavingsAccount(BankAccount): 
+   """A savings account that adds interest.""" 
+ 
+   def __init__(self, owner, initial_balance=0, interest_rate=2): 
+       """Set up the savings account.""" 
+       super().__init__(owner, initial_balance) 
+       self.interest_rate = interest_rate 
+ 
+   def apply_interest(self): 
+       """Increase the balance by the interest rate percentage.""" 
+       interest = self.balance * (self.interest_rate / 100) 
+       self.balance += interest 
+ 
+       self.transactions.append(f"Interest added: +£{interest:.2f}") 
+       print(f"Interest added: £{interest:.2f}") 
+       print(f"New balance: £{self.balance:.2f}") 
+ 
+ 
+def get_money(message): 
+   """Ask for a money amount and stop the program crashing.""" 
+   while True: 
+       try: 
+           amount = float(input(message)) 
+           return amount 
+       except ValueError: 
+           print("Please enter a valid number.") 
+ 
+ 
+def show_menu(): 
+   """Display the menu.""" 
+   print("\n=== Bank Menu ===") 
+   print("1. Deposit") 
+   print("2. Withdraw") 
+   print("3. Check balance") 
+   print("4. View history") 
+   print("5. Apply interest") 
+   print("6. Exit") 
+ 
+ 
+def main(): 
+   print("=== OOP Bank Account ===") 
+ 
+   name = input("Enter account holder name: ") 
+   opening = get_money("Enter opening balance: £") 
+   interest_rate = get_money("Enter interest rate percentage: ") 
+ 
+   account = SavingsAccount(name, opening, interest_rate) 
+ 
+   while True: 
+       show_menu() 
+ 
+       choice = input("Choose an option (1-6): ") 
+ 
+       if choice == "1": 
+           amount = get_money("Amount to deposit: £") 
+           account.deposit(amount) 
+ 
+       elif choice == "2": 
+           amount = get_money("Amount to withdraw: £") 
+           account.withdraw(amount) 
+ 
+       elif choice == "3": 
+           account.show_balance() 
+ 
+       elif choice == "4": 
+           account.show_history() 
+ 
+       elif choice == "5": 
+           account.apply_interest() 
+ 
+       elif choice == "6": 
+           print("Thank you for banking with us.") 
+           break 
+ 
+       else: 
+           print("Invalid choice. Please enter a number from 1 to 6.") 
+ 
+ 
+main() 
+
+```
+ 
 
  
 
