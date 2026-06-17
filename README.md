@@ -47,10 +47,16 @@ This portfolio documents my progress through a Python programming course designe
 ## Unit Converter
 **Description**
 
+A program that converts between common units. At minimum:
+
+Kilometres ↔ Miles
+
+Celsius ↔ Fahrenheit
+
+Kilograms ↔ Pounds
     
 
  
-
 
 
 ```Python
