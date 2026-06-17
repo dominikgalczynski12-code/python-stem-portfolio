@@ -192,6 +192,14 @@ main()
 ```
 ##  Number Guessing Game
 **Description**
+
+The computer picks a random number. The player guesses until they get it right. The program tells them if their guess is too high or too low. It counts the number of guesses.
+
+
+
+
+
+
 ```Python
 import random 
  
