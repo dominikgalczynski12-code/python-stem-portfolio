@@ -289,6 +289,7 @@ main()
 ## To-Do List Manager
 **Description**
 
+A simple to-do list where the user can add tasks, view all tasks, mark a task as done, and remove tasks.
     
 
  
@@ -352,6 +353,7 @@ main()
 ## Student Grade Calculator
 **Description**
 
+The user enters a student's name and their scores for several subjects. The program calculates the average and assigns a grade (A, B, C, D, U). It handles invalid input gracefully.
     
 
  
@@ -463,6 +465,7 @@ main()
 ## OOP Bank Account
 **Description**
 
+A simple bank account simulation using a class. The user can deposit money, withdraw money (with a check for sufficient funds), and check their balance.
     
 
  
